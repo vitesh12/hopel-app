@@ -12,7 +12,7 @@ class FavoutitesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.cyan.shade100,
+        backgroundColor: Colors.blue.shade400,
         appBar: AppBar(
           title: Text("favorites"),
           centerTitle: true,

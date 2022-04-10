@@ -2,8 +2,6 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:hotel/coffee_card.dart';
 import 'package:hotel/coffee_card2.dart';
-import 'package:hotel/hotel_card3.dart';
-import 'package:hotel/mapscreen.dart';
 import 'package:hotel/navbar.dart';
 import 'package:hotel/offers.dart';
 import 'package:hotel/profile.dart';
@@ -64,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.cyan.shade100,
+      backgroundColor: Colors.blue.shade100,
       body: SafeArea(
           child: ListView(
         shrinkWrap: true,
@@ -73,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         children: [
           Container(
             width: MediaQuery.of(context).size.width,
-            height: 1300,
+            height: 1050,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -94,20 +92,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                     builder: (context) => navbar())),
                             color: Colors.black
                             )),
-                    Container(
-                      decoration: BoxDecoration(
-                          color: Colors.blue.shade50,
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                      child: IconButton(
-                            icon: Icon(Icons.map_rounded),
-                            onPressed: () => Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => MapScreen())),
-                            color: Colors.black
-                            )
-                    ),
                   ],
                 ),
                 SizedBox(
@@ -116,7 +100,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 Text(
                   "Find the best hotel for",
                   style: TextStyle(
-                      color: Colors.lightBlue,
+                      color: Colors.black,
                       fontSize: 20,
                       fontWeight: FontWeight.bold),
                 ),
@@ -188,7 +172,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 SizedBox(height: 10),
 // slide show
                 ClipRRect(
-              borderRadius: BorderRadius.circular(30),
+              borderRadius: BorderRadius.circular(20),
               child: Container(
                 child: CarouselSlider.builder(
                   options: CarouselOptions(
@@ -221,7 +205,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                 ),
                 CoffeeCardSecond(),
                 SizedBox(height: 30),
-                HotelCardThree(),
                
               ],
             ),

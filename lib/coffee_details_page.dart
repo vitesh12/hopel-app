@@ -3,7 +3,6 @@
 import 'package:blurrycontainer/blurrycontainer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:hotel/mapscreen.dart';
 
 class CoffeeDetailsPage extends StatelessWidget {
   const CoffeeDetailsPage({Key key, String name, String hotelname, hotelimage, double hotelprise}) : super(key: key);
@@ -192,29 +191,7 @@ class CoffeeDetailsPage extends StatelessWidget {
                               SizedBox(
                                 height: 5,
                               ),
-                              Container(
-                                child: OutlinedButton(
-                style: OutlinedButton.styleFrom(
-                    fixedSize: const Size(150, 50),
-                    textStyle: TextStyle(fontSize: 17),
-                    primary: Colors.black,
-                    backgroundColor: Colors.blue,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(40)),
-                        side: BorderSide(color: Colors.red))),
-                child: Text("Show on Map", textAlign: TextAlign.center),
-                onPressed: () {
-                  Navigator.pushAndRemoveUntil(
-                      context,
-                      MaterialPageRoute(builder: (context) => MapScreen(),
-                      settings: RouteSettings(
-                      arguments: todo, 
-                      ),
-                      ),
-                      (Route<dynamic> route) => false);
-                },
-              ),
-                              ),
+                              
                             ],
                           )
                         ],

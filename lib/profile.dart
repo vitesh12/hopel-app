@@ -76,8 +76,8 @@ class _EditProfileuiState extends State<EditProfileui> {
               SizedBox(height: 30),
               buildTextField("Fullname", "KOLLA OM VITESH", false),
               buildTextField("email", "omvitesh@gmail.com", false),
-              buildTextField("mobile number", "8688510013", false),
-              buildTextField("password", "**********", true),
+              buildTextField("mobile number", "8688111111", false),
+              //buildTextField("password", "**********", true),
               buildTextField("Location", "Chennai", false),
               SizedBox(height: 30),
               Row(

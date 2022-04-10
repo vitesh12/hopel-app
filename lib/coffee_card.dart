@@ -43,7 +43,7 @@ class CoffeeCard extends StatelessWidget {
               child: Row(
                 children: [
                   Container(
-                    height: 290,
+                    height: 270,
                     width: 160,
                     child: Column(
                       children: [
@@ -76,33 +76,6 @@ class CoffeeCard extends StatelessWidget {
                                 style: TextStyle(
                                     color: Color(0xff919293), fontSize: 11),
                               ),
-                              Row(
-                                children: [
-                              Container(
-                                child: Icon(
-                                  Icons.wifi_outlined,
-                                  color: Colors.lightBlue.shade800,
-                                  size: 20)),
-                                  SizedBox(width: 5),
-                              Container(
-                                child: Icon(
-                                  Icons.local_parking_rounded,
-                                  color: Colors.lightBlue.shade700,
-                                  size: 20)),
-                                  SizedBox(width: 5),
-                              Container(
-                                child: Icon(
-                                  Icons.check_circle_outline_outlined,
-                                  color: Colors.lightBlue.shade700,
-                                  size: 20)),
-                                  SizedBox(width: 5),
-                              Container(
-                                child: Icon(
-                                  Icons.security_outlined,
-                                  color: Colors.lightBlue.shade800,
-                                  size: 20)),
-                                  SizedBox(width: 5),
-                                ]),
                               SizedBox(
                                 height: 5,
                               ),

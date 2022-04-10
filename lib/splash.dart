@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   height: 300,
                   width: 300,
                   child: Lottie.network(
-                      "https://assets10.lottiefiles.com/packages/lf20_okbg8ec7.json")),
+                      "https://assets4.lottiefiles.com/private_files/lf30_rmipxvc4.json")),
               SizedBox(height: 20),
               Text(
                 "HOTEL",

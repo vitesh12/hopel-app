@@ -165,7 +165,7 @@ class _LoginPageState extends State<LoginPage> {
                   padding: EdgeInsets.symmetric(horizontal: 32),
                   child: Center(
                     child: Lottie.network(
-                      "https://assets1.lottiefiles.com/private_files/lf30_WjupkW.json"),
+                      "https://assets6.lottiefiles.com/packages/lf20_sijd0y0h.json"),
                   ),
                 ),
                 Container(

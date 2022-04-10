@@ -22,7 +22,7 @@ class _BookingPageState extends State<BookingPage> {
                   height: 300,
                   width: 300,
                   child: Lottie.network(
-                      "https://assets1.lottiefiles.com/packages/lf20_fxvz0c.json")),
+                      "https://assets8.lottiefiles.com/packages/lf20_vgumtcs7.json")),
               SizedBox(height: 20),
               Text(
                 "book your hotel now!!",
